@@ -116,7 +116,7 @@ def plot_top1_expert(topk_indices, token_labels, layer_labels, n_experts, subtit
     ax.imshow(indexed.T, aspect="auto", cmap=cmap, norm=norm, interpolation="nearest")
     ax.set_xlabel("Token", fontsize=10)
     ax.set_ylabel("MoE Layer", fontsize=10)
-    ax.set_title("Top-1 Expert Routed (MoE layer × token)", fontsize=11)
+    ax.set_title("Top-1 Expert Routed (MoE layer × token)  |  cell label = expert ID", fontsize=11)
     ax.set_xticks(range(n_tokens))
     ax.set_xticklabels(token_labels, fontsize=7, rotation=90)
     ax.set_yticks(range(n_layers))
